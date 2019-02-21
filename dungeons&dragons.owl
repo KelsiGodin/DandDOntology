@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6">
+        <rdfs:comment>A Dungeons and Dragons ontology that describes characters based various traits.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasAlignment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasAlignment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasBackground -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasBackground">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasClass">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasRace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasRace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#hasFeature"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Acolyte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Acolyte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Barbarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Barbarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Bard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Bard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticEvil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticEvil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticNeutral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticNeutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Character">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Charlatan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Charlatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Cleric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Cleric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Criminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Criminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dragonborn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dragonborn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Druid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Druid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dwarf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dwarf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Elf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Elf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Entertainer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Entertainer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Fighter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Fighter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#FolkHero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#FolkHero">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Gargantuan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Gargantuan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Gnome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Gnome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#GuildArtisan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#GuildArtisan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Elf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Elf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Orc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Orc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Halfling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Halfling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Hermit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Hermit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Huge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Huge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Large -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Large">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulEvil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulEvil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulNeutral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulNeutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Monk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Monk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralEvil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralEvil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralGood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralGood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Noble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Noble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Outlander -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Outlander">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Paladin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Paladin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Ranger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Ranger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Rogue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Rogue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sailor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sailor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Small -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Small">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Soldier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Soldier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sorcerer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sorcerer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Tiefling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Tiefling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Race"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Tiny -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Tiny">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Size"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#TrueNeutral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#TrueNeutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Alignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Urchin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Urchin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Background"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Warlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Warlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Wizard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Wizard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#CharacterClass"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Acolyte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Charlatan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Criminal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Entertainer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#FolkHero"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#GuildArtisan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Hermit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Noble"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Outlander"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sailor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Soldier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Urchin"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Barbarian"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Bard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Cleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Druid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Fighter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Monk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Paladin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Ranger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Rogue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Sorcerer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Warlock"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Wizard"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticEvil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticGood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#ChaoticNeutral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulEvil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulGood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#LawfulNeutral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralEvil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#NeutralGood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#TrueNeutral"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dragonborn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Dwarf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Elf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Gnome"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Elf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Half-Orc"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Halfling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Human"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2019/1/untitled-ontology-6#Tiefling"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
